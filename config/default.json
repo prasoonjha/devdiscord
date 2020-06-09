@@ -1,0 +1,3 @@
+{
+  "mongoURI": "mongodb+srv://webmessi:test123@cluster0-w8ivg.mongodb.net/DevDiscord?retryWrites=true&w=majority"
+}
