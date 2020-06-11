@@ -1,4 +1,6 @@
 {
   "mongoURI": "mongodb+srv://webmessi:test123@cluster0-w8ivg.mongodb.net/DevDiscord?retryWrites=true&w=majority",
-  "jwtSecret": "mySecretToken"
+  "jwtSecret": "mySecretToken",
+  "githubClientId": "01d9d5feb80ac5a8de52",
+  "githubClientSecret": "a858a0440691afedb953c18670efbb3c9a53d9c7"
 }
