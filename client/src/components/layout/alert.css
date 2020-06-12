@@ -1,4 +1,23 @@
 .alert {
-  width: 50%;
-  height: 20%;
+  height: 2rem;
+  width: 38rem;
+  border-radius: 4px;
+  border: none;
+  margin: 1rem auto;
+  text-align: center;
+  padding-top: 0.5rem;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
+.alert-success {
+  background-color: rgb(109, 177, 20);
+}
+
+.alert-danger {
+  background-color: rgb(236, 68, 25);
+}
+
+.alert-warning {
+  background-color: rgb(243, 229, 27);
 }

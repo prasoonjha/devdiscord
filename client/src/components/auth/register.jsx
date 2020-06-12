@@ -22,7 +22,7 @@ const Register = ({ setAlert }) => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    setAlert("Successfully registered", "success");
+    setAlert("Successfully registered!", "success");
   };
 
   return (
