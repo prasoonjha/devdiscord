@@ -1,9 +1,14 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
 
 import Button from "../UIElements/button";
+
+import { setAlert } from "../../actions/alert";
+
 import "./register.css";
 
-const Register = () => {
+const Register = ({ setAlert }) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -17,7 +22,7 @@ const Register = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    alert("success");
+    setAlert("Successfully registered", "success");
   };
 
   return (
@@ -61,4 +66,8 @@ const Register = () => {
   );
 };
 
-export default Register;
+Register.propTypes = {
+  setAlert: PropTypes.func.isRequired,
+};
+
+export default connect(null, { setAlert })(Register);

@@ -5,9 +5,10 @@ import store from "./store";
 
 import "./App.css";
 
-import NavBar from "./components/layout/navbar";
-import Login from "./components/auth/login";
-import Register from "./components/auth/register";
+import NavBar from "./components/layout/navbar.jsx";
+import Alert from "./components/layout/alert";
+import Login from "./components/auth/login.jsx";
+import Register from "./components/auth/register.jsx";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Router>
         <div className="App">
           <NavBar />
+          <Alert />
           <Switch>
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
