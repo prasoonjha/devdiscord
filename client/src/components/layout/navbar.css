@@ -21,7 +21,6 @@
 .navlinks-container {
   position: absolute;
   right: 1rem;
-  width: 25rem;
 }
 .navlinks-container ul {
   list-style: none;
@@ -31,6 +30,10 @@
 
 .navlinks-container li {
   list-style: none;
+}
+
+.navlinks-container li:not(:last-child) {
+  margin-right: 3rem;
 }
 
 .navlinks-container a {
