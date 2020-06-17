@@ -21,6 +21,12 @@
   font-size: 1rem;
   border-bottom: 1px solid grey;
 }
+
+.form-body input:focus {
+  outline: none;
+  font-weight: 700;
+}
+
 .button-container {
   width: 30%;
   align-items: center;
