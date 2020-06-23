@@ -5,10 +5,12 @@ import store from "./store";
 
 import "./App.css";
 
+import PrivateRoute from "./components/routing/privateRoute";
 import NavBar from "./components/layout/navbar.jsx";
 import Alert from "./components/layout/alert";
 import Login from "./components/auth/login.jsx";
 import Register from "./components/auth/register.jsx";
+import Dashboard from "./components/dashboard/dashboard";
 import setAuthToken from "./utils/setAuthToken";
 import { loadUser } from "./actions/auth";
 
@@ -30,6 +32,7 @@ const App = () => {
           <Switch>
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
+            <PrivateRoute exact path="/dashboard" component={Dashboard} />
           </Switch>
         </div>
       </Router>
