@@ -1,0 +1,29 @@
+select {
+  margin-bottom: 1rem;
+  font-family: inherit;
+  height: 3rem;
+  border-style: none;
+  border-radius: 2px;
+  font-size: 1rem;
+  border-bottom: 1px solid grey;
+}
+
+select:focus {
+  outline: none;
+  font-weight: 700;
+}
+
+textarea {
+  margin-bottom: 1rem;
+  font-family: inherit;
+  height: 3rem;
+  border-style: none;
+  border-radius: 2px;
+  font-size: 1rem;
+  border-bottom: 1px solid grey;
+}
+
+textarea:focus {
+  outline: none;
+  font-weight: 700;
+}
