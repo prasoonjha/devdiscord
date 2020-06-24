@@ -11,6 +11,7 @@ import Alert from "./components/layout/alert";
 import Login from "./components/auth/login.jsx";
 import Register from "./components/auth/register.jsx";
 import Dashboard from "./components/dashboard/dashboard";
+import CreateProfile from "./components/profile-forms/createProfile";
 import setAuthToken from "./utils/setAuthToken";
 import { loadUser } from "./actions/auth";
 
@@ -26,13 +27,18 @@ const App = () => {
   return (
     <Provider store={store}>
       <Router>
+        <NavBar />
         <div className="App">
-          <NavBar />
           <Alert />
           <Switch>
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
             <PrivateRoute exact path="/dashboard" component={Dashboard} />
+            <PrivateRoute
+              exact
+              path="/create-profile"
+              component={CreateProfile}
+            />
           </Switch>
         </div>
       </Router>

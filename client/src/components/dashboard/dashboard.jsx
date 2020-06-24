@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 import { getCurrentProfile } from "../../actions/profile";
 
 import SpinnerComponent from "../layout/spinner";
+import Button from "../UIElements/button";
 
 const Dashboard = ({
   getCurrentProfile,
@@ -22,7 +23,10 @@ const Dashboard = ({
       {profile ? (
         <React.Fragment>has</React.Fragment>
       ) : (
-        <React.Fragment>has not</React.Fragment>
+        <React.Fragment>
+          <p>You haven't set up a profile yet, please add some info!</p>
+          <Button to="/create-profile">Create profile</Button>
+        </React.Fragment>
       )}
     </React.Fragment>
   );
